@@ -1,0 +1,18 @@
+CREATE TABLE shoe_store (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, price INTEGER, color TEXT, size NUMERIC);
+INSERT INTO shoe_store VALUES (1, "Billy Low", 5, 70, "Gray", 11);
+INSERT INTO shoe_store VALUES (2, "Billy Low", 4, 70, "Black", 11);
+INSERT INTO shoe_store VALUES (3, "Billy Low", 6, 70, "Red", 11);
+INSERT INTO shoe_store VALUES (4, "Billy Low", 2, 70, "Blue", 11);
+INSERT INTO shoe_store VALUES (5, "Billy Low", 3, 70, "White", 11);
+INSERT INTO shoe_store VALUES (6, "Billy High", 1, 90, "Gray", 11);
+INSERT INTO shoe_store VALUES (7, "Billy High", 7, 90, "Black", 11);
+INSERT INTO shoe_store VALUES (8, "Billy High", 4, 90, "Red", 11);
+INSERT INTO shoe_store VALUES (9, "Billy High", 6, 90, "Blue", 11);
+INSERT INTO shoe_store VALUES (10, "Billy High", 5, 90, "Gray", 11);
+INSERT INTO shoe_store VALUES (11, "Sneaker", 5, 75, "Gray", 11);
+INSERT INTO shoe_store VALUES (12, "Sneaker", 7, 75, "Black", 11);
+INSERT INTO shoe_store VALUES (13, "Sneaker", 3, 75, "Red", 11);
+INSERT INTO shoe_store VALUES (14, "Sneaker", 1, 75, "Blue", 11);
+INSERT INTO shoe_store VALUES (15, "Sneaker", 8, 75, "White", 11);
+SELECT * FROM shoe_store ORDER by price;
+SELECT SUM(QUANTITY) FROM shoe_store;
