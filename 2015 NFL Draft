@@ -241,3 +241,29 @@ FROM picks
 GROUP BY position
 ORDER BY avg_pick;
 
+SELECT college,
+    COUNT(*) AS first_round
+FROM picks
+WHERE college = "Washington" 
+AND pick_number < 33
+;
+
+SELECT college,
+    COUNT(pick_number) AS first_round
+FROM picks
+WHERE pick_number < 33
+GROUP BY college
+ORDER BY first_round DESC
+;
+
+SELECT pick_number, name, college, position,
+    CASE 
+        WHEN pick_number < 33 THEN "Round 1"
+        WHEN pick_number < 65 THEN "Round 2"
+        ELSE "Round 3"
+    END as "Round"
+FROM picks
+WHERE picked_by = "Seattle"
+GROUP BY Round;
+
+
