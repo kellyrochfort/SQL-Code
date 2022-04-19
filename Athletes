@@ -1,0 +1,218 @@
+/* Create table about the people and what they do here */
+
+CREATE TABLE athletes (
+    id TEXT PRIMARY KEY, 
+    name TEXT, 
+    age INTEGER);
+
+INSERT INTO athletes (id, name, age) VALUES ("a1", "Robbie Ray", 30);
+INSERT INTO athletes (id, name, age) VALUES ("a2", "Mitch Haniger", 31);
+INSERT INTO athletes (id, name, age) VALUES ("a3", "Tyler Lockett", 29);
+INSERT INTO athletes (id, name, age) VALUES ("a4", "DK Metcalf", 24);
+INSERT INTO athletes (id, name, age) VALUES ("a5", "Christiano Ronaldo", 37);
+INSERT INTO athletes (id, name, age) VALUES ("a6", "Luis Figo", 49);
+INSERT INTO athletes (id, name, age) VALUES ("a7", "Tiger Woods", 46);
+INSERT INTO athletes (id, name, age) VALUES ("a8", "Clint Dempsey", 39);
+INSERT INTO athletes (id, name, age) VALUES ("a9", "JP Crawford", 27);
+INSERT INTO athletes (id, name, age) VALUES ("a10", "Rashaad Penny", 26);
+INSERT INTO athletes (id, name, age) VALUES ("a11", "Edgar Martinez", 59);
+INSERT INTO athletes (id, name, age) VALUES ("a12", "Ken Griffey Jr", 52);
+INSERT INTO athletes (id, name, age) VALUES ("a13", "Gary Payton", 53);
+INSERT INTO athletes (id, name, age) VALUES ("a14", "Shawn Kemp", 52);
+INSERT INTO athletes (id, name, age) VALUES ("a15", "Shawn Bradley", 50);
+INSERT INTO athletes (id, name, age) VALUES ("a16", "Ty Detmer", 54);
+
+
+CREATE TABLE sport (
+    id TEXT PRIMARY KEY, 
+    sport TEXT);
+
+INSERT INTO sport (id, sport) VALUES ("s1", "Baseball");
+INSERT INTO sport (id, sport) VALUES ("s2", "Football");
+INSERT INTO sport (id, sport) VALUES ("s3", "Soccer");
+INSERT INTO sport (id, sport) VALUES ("s4", "Basketball");
+INSERT INTO sport (id, sport) VALUES ("s5", "Golf");
+
+
+
+CREATE TABLE teams (
+    id TEXT PRIMARY KEY, 
+    city TEXT,
+    mascot TEXT);
+
+INSERT INTO teams (id, city, mascot) VALUES ("t1", "Seattle", "Mariners");
+INSERT INTO teams (id, city, mascot) VALUES ("t2", "Seattle", "Seahawks");
+INSERT INTO teams (id, city, mascot) VALUES ("t3", "Seattle", "Sounders");
+INSERT INTO teams (id, city, mascot) VALUES ("t4", "Seattle", "SuperSonics");
+INSERT INTO teams (id, city, mascot) VALUES ("t5", "Cincinnati", "Reds");
+INSERT INTO teams (id, city, mascot) VALUES ("t6", "Chicago", "White Sox");
+INSERT INTO teams (id, city, mascot) VALUES ("t7", "Arizona", "Diamondbacks");
+INSERT INTO teams (id, city, mascot) VALUES ("t8", "Los Angeles", "Lakers");
+INSERT INTO teams (id, city, mascot) VALUES ("t9", "Detroit", "Tigers");
+INSERT INTO teams (id, city, mascot) VALUES ("t10", "Lisboa", "Sporting CP");
+INSERT INTO teams (id, city, mascot) VALUES ("t11", "Manchester", "United");
+INSERT INTO teams (id, city, mascot) VALUES ("t12", "Madrid", "Real Madrid");
+INSERT INTO teams (id, city, mascot) VALUES ("t13", "Torino", "Juventus");
+INSERT INTO teams (id, city, mascot) VALUES ("t14", "Barcelona", "FC Barcelona");
+INSERT INTO teams (id, city, mascot) VALUES ("t15", "Milano", "Inter Milan");
+INSERT INTO teams (id, city, mascot) VALUES ("t16", "Stanford", "Cardinal");
+INSERT INTO teams (id, city, mascot) VALUES ("t17", "New England", "Revolution");
+INSERT INTO teams (id, city, mascot) VALUES ("t18", "London", "Fulham F.C");
+INSERT INTO teams (id, city, mascot) VALUES ("t19", "Tottenham", "Hotspur");
+INSERT INTO teams (id, city, mascot) VALUES ("t20", "Milwaukee", "Bucks");
+INSERT INTO teams (id, city, mascot) VALUES ("t21", "Boston", "Celtics");
+INSERT INTO teams (id, city, mascot) VALUES ("t22", "Miami", "Heat");
+INSERT INTO teams (id, city, mascot) VALUES ("t23", "Cleveland", "Cavaliers");
+INSERT INTO teams (id, city, mascot) VALUES ("t24", "Portland", "Trail Blazers");
+INSERT INTO teams (id, city, mascot) VALUES ("t25", "Orlando", "Magic");
+INSERT INTO teams (id, city, mascot) VALUES ("t26", "Philadeplhia", "76ers");
+INSERT INTO teams (id, city, mascot) VALUES ("t27", "New Jersey", "Nets");
+INSERT INTO teams (id, city, mascot) VALUES ("t28", "Dallas", "Mavericks");
+INSERT INTO teams (id, city, mascot) VALUES ("t29", "Philadelphia", "Eagles");
+INSERT INTO teams (id, city, mascot) VALUES ("t30", "Philadelphia", "Phillies");
+INSERT INTO teams (id, city, mascot) VALUES ("t31", "Green Bay", "Packers");
+INSERT INTO teams (id, city, mascot) VALUES ("t32", "San Francisco", "49ers");
+INSERT INTO teams (id, city, mascot) VALUES ("t33", "Cleveland", "Browns");
+INSERT INTO teams (id, city, mascot) VALUES ("t34", "Detroit", "Lions");
+INSERT INTO teams (id, city, mascot) VALUES ("t35", "Atlanta", "Falcons");
+INSERT INTO teams (id, city, mascot) VALUES ("t36", "Toronto", "Blue Jays");
+
+
+CREATE TABLE years (
+    id TEXT PRIMARY KEY, 
+    year_started INTEGER,
+    year_ended INTEGER);
+
+INSERT INTO years (id, year_started, year_ended) VALUES ("y1", "2014", "2014");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y2", "2015", "2020");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y3", "2020", "2021");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y4", "2022", "Present");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y5", "2016", "2016");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y6", "2017", "Present");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y7", "2015", "Present");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y8", "2019", "Present");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y9", "2002", "2003");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y10", "2003", "2009");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y11", "2009", "2018");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y12", "2018", "2021");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y13", "2021", "Present");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y14", "1989", "1995");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y15", "1995", "2000");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y16", "2000", "2005");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y17", "2005", "2009");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y18", "1996", "Present");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y19", "2004", "2006");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y20", "2007", "2012");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y21", "2012", "2013");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y22", "2013", "2018");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y23", "2017", "2018");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y24", "2019", "Present");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y25", "2018", "Present");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y26", "1987", "2004");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y27", "1989", "1999");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y28", "2000", "2008");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y29", "2008", "2008");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y30", "2009", "2010");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y31", "1990", "2003");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y32", "2003", "2003");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y33", "2003", "2004");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y34", "2004", "2005");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y35", "2005", "2007");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y36", "1989", "1997");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y37", "1997", "2000");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y38", "2000", "2002");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y39", "2002", "2003");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y40", "1993", "1995");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y41", "1995", "1997");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y42", "1997", "2005");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y43", "1992", "1995");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y44", "1996", "1997");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y45", "1998", "1998");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y46", "1999", "2000");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y47", "2001", "2003");
+INSERT INTO years (id, year_started, year_ended) VALUES ("y48", "2004", "2005");
+
+
+CREATE TABLE played (
+    id INTEGER PRIMARY KEY AUTOINCREMENT, 
+    a TEXT,
+    s TEXT,
+    t TEXT,
+    y TEXT);
+
+
+INSERT INTO played (a, s, t, y) VALUES ("a1", "s1", "t9", "y1");
+INSERT INTO played (a, s, t, y) VALUES ("a1", "s1", "t7", "y2");
+INSERT INTO played (a, s, t, y) VALUES ("a1", "s1", "t36", "y3");
+INSERT INTO played (a, s, t, y) VALUES ("a1", "s1", "t1", "y4");
+INSERT INTO played (a, s, t, y) VALUES ("a2", "s1", "t7", "y5");
+INSERT INTO played (a, s, t, y) VALUES ("a2", "s1", "t1", "y6");
+INSERT INTO played (a, s, t, y) VALUES ("a3", "s2", "t2", "y7");
+INSERT INTO played (a, s, t, y) VALUES ("a4", "s2", "t2", "y8");
+INSERT INTO played (a, s, t, y) VALUES ("a5", "s3", "t10", "y9");
+INSERT INTO played (a, s, t, y) VALUES ("a5", "s3", "t11", "y10");
+INSERT INTO played (a, s, t, y) VALUES ("a5", "s3", "t12", "y11");
+INSERT INTO played (a, s, t, y) VALUES ("a5", "s3", "t13", "y12");
+INSERT INTO played (a, s, t, y) VALUES ("a5", "s3", "t11", "y13");
+INSERT INTO played (a, s, t, y) VALUES ("a6", "s3", "t10", "y14");
+INSERT INTO played (a, s, t, y) VALUES ("a6", "s3", "t14", "y15");
+INSERT INTO played (a, s, t, y) VALUES ("a6", "s3", "t12", "y16");
+INSERT INTO played (a, s, t, y) VALUES ("a6", "s3", "t15", "y17");
+INSERT INTO played (a, s, t, y) VALUES ("a7", "s5", "t16", "y18");
+INSERT INTO played (a, s, t, y) VALUES ("a8", "s3", "t17", "y19");
+INSERT INTO played (a, s, t, y) VALUES ("a8", "s3", "t18", "y20");
+INSERT INTO played (a, s, t, y) VALUES ("a8", "s3", "t19", "y21");
+INSERT INTO played (a, s, t, y) VALUES ("a8", "s3", "t3", "y22");
+INSERT INTO played (a, s, t, y) VALUES ("a9", "s1", "t30", "y23");
+INSERT INTO played (a, s, t, y) VALUES ("a9", "s1", "t1", "y24");
+INSERT INTO played (a, s, t, y) VALUES ("a10", "s2", "t2", "y25");
+INSERT INTO played (a, s, t, y) VALUES ("a11", "s1", "t1", "y26");
+INSERT INTO played (a, s, t, y) VALUES ("a12", "s1", "t1", "y27");
+INSERT INTO played (a, s, t, y) VALUES ("a12", "s1", "t5", "y28");
+INSERT INTO played (a, s, t, y) VALUES ("a12", "s1", "t6", "y29");
+INSERT INTO played (a, s, t, y) VALUES ("a12", "s1", "t1", "y30");
+INSERT INTO played (a, s, t, y) VALUES ("a13", "s4", "t4", "y31");
+INSERT INTO played (a, s, t, y) VALUES ("a13", "s4", "t20", "y32");
+INSERT INTO played (a, s, t, y) VALUES ("a13", "s4", "t8", "y33");
+INSERT INTO played (a, s, t, y) VALUES ("a13", "s4", "t21", "y34");
+INSERT INTO played (a, s, t, y) VALUES ("a13", "s4", "t22", "y35");
+INSERT INTO played (a, s, t, y) VALUES ("a14", "s4", "t4", "y36");
+INSERT INTO played (a, s, t, y) VALUES ("a14", "s4", "t23", "y37");
+INSERT INTO played (a, s, t, y) VALUES ("a14", "s4", "t24", "y38");
+INSERT INTO played (a, s, t, y) VALUES ("a14", "s4", "t25", "y39");
+INSERT INTO played (a, s, t, y) VALUES ("a15", "s4", "t26", "y40");
+INSERT INTO played (a, s, t, y) VALUES ("a15", "s4", "t27", "y41");
+INSERT INTO played (a, s, t, y) VALUES ("a15", "s4", "t28", "y42");
+INSERT INTO played (a, s, t, y) VALUES ("a16", "s2", "t31", "y43");
+INSERT INTO played (a, s, t, y) VALUES ("a16", "s2", "t29", "y44");
+INSERT INTO played (a, s, t, y) VALUES ("a16", "s2", "t32", "y45");
+INSERT INTO played (a, s, t, y) VALUES ("a16", "s2", "t33", "y46");
+INSERT INTO played (a, s, t, y) VALUES ("a16", "s2", "t34", "y47");
+INSERT INTO played (a, s, t, y) VALUES ("a16", "s2", "t35", "y48");
+
+
+
+SELECT athletes.name AS Athlete, athletes.age AS Age, sport.sport AS Sport, teams.city AS City, teams.mascot AS Team, years.year_started AS Start, years.year_ended AS "End"
+FROM played 
+    JOIN athletes
+        ON played.a = athletes.id
+    JOIN sport
+        ON played.s = sport.id
+    JOIN teams
+        ON played.t = teams.id
+    JOIN years
+        ON played.y = years.id
+    ;
+
+
+
+
+
+
+
+
+
+
+
+
+
